@@ -79,7 +79,7 @@ func ReadPaa(r io.Reader) ([]Tagg, error) {
 		tagg.signature = string(signature)
 
 		if tagg.Signature() != TaggSignature {
-			return nil, fmt.Errorf("Invalid TAGG signature (expected TAGG, got \"%s\"", tagg.Signature())
+			return nil, fmt.Errorf("Invalid TAGG signature (expected TAGG, got \"%s\")", tagg.Signature())
 		}
 
 		// Read the tag name

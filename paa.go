@@ -22,6 +22,7 @@ const (
 	GrayWithAlpha PaaType = 0x8080
 )
 
+// Returns whether the PaaType is a known type.
 func (p PaaType) IsValid() bool {
 	switch p {
 	case DXT1:
